@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usashi Saha - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(0, 0%, 0%);
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(255, 255, 255);
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a{
+     text-decoration: none;
+     color: hsl(0, 0%, 0%);
+      }
+      nav ul li a:hover{
+     text-decoration: none;
+     color: rgb(0, 0, 255);
+      }
+      main hr{
+        border: 0;
+        background: hsl(0, 0%, 0%);
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 65px 0;
+        align-items: center;
+      }
+      .firstsection >div{
+        width: 30%;
+      }
+      .leftsection{
+        font-size: 3rem;
+      }
+      .leftsection .buttons{
+        padding: 50px 0;
+      }
+      .leftsection .btn{
+        padding: 12px;
+        background: #407BFF;
+        color: black;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .rightsection img{
+        width: 120%;
+        
+      }
+      .blue{
+        color: hsl(240, 100%, 50%);
+      }
+      #element{
+        color: hsl(240, 100%, 50%)0ff;
+      }
+      .secondsection{
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondsection h1{
+        font-size: 1.9rem;
+      }
+      .text-grey{
+        color: grey;
+      }
+      .secondsection .box{
+        background: black;
+        width: 79vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondsection .vertical{
+        background-color: black;
+        height: 93px;
+        width: 1px;        
+        margin: 0 6vw;
+      }
+      .image-top{
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+      }
+      .vertical-text{
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 14px;
+      }
+      .vertical-des{
+        position: relative;
+        top: 86px;
+        color: grey;
+        width: 150px;
+        font-size: 9px;
+      }
+      footer{
+        background-color: rgb(255, 255, 255);
+      }
+      footer .footer-center{
+        text-align: center;
+        color: grey;
+        padding: 12px 0;
+      }
+      @media screen and (max-width: 1400px) {
+        .box{
+          flex-direction: column;
+        }
+        .secondsection .vertical{
+          height: unset;
+        }
+        .vertical-text, .vertical-des{
+          left: 45px;
+        }
+        .secondsection .box{
+          width: 50vw;
+        }
+        nav{
+          flex-direction: column;
+        }
+
+        .firstsection{
+          flex-direction: column-reverse;
+        }
+        .leftsection{
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .secondsection{
+          height: 130vh;
+        }
+        .rightsection{
+          width: 721px !important;
+          display: flex;
+          justify-content: center;
+        }
+        .rightsection img{
+          width: 45vw;
+          margin-bottom: 73px;
+        }
+        .image-top{
+          top: 108px;
+        }
+        .secondsection{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        body{
+          min-width: fit-content;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Usashi's Portfolio</div>
+        <div class="right">
+            <ul>
+                <a href="/"><li>Home</a></li>
+                <a href="/"><li>About</a></li>
+                <a href="/"><li>Services</a></li>
+                <a href="/"><li>Projects</a></li>
+                <a href="/"><li>Contact Me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div>Hi, My Name is <span class="blue">Usashi Saha</span></div>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="https://img.freepik.com/free-vector/programming-concept-illustration_114360-1325.jpg?w=740&t=st=1690560233~exp=1690560833~hmac=f2123e7e4c9186007e129dff3001a671d6c5aa744afa5322b6aa30c0d662f7bb" alt="">
+            </div>
+        </section>
+<hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png?w=740&t=st=1690568439~exp=1690569039~hmac=7e185a61868371b9b7cd91d0123f19965d1f066c495d678c3b91b9c78aeb2818" alt="" class="image-top">
+                    <div class="vertical-text">
+                        HTML Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png?w=740&t=st=1690568485~exp=1690569085~hmac=e97138716c8b8252154ad9743adcf1b223af0cb6a06522a325eae705d2b43777" alt="" class="image-top">
+                    <div class="vertical-text">
+                        CSS Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919828.png?w=740&t=st=1690568582~exp=1690569182~hmac=1e798006d76c6825ee2355deb07e19afe2ba035044c7173cbfe6e48711619861" alt="" class="image-top">
+                    <div class="vertical-text">
+                        JavaScript Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png?w=740&t=st=1690568731~exp=1690569331~hmac=925d9f02e12ff0b9ae7bf234ab65f0a71290694a28058d98af38600ab38bb494" alt="" class="image-top">
+                    <div class="vertical-text">
+                        NodeJS Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="https://cdn-icons-png.flaticon.com/512/423/423066.png?w=740&t=st=1690568813~exp=1690569413~hmac=b928fcd54b2b73fd2dbc9dfaec4d3081aa5ac2ec58f5aa10def883bff66ab954" alt="" class="image-top">
+                    <div class="vertical-text">
+                        Python Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="https://img.freepik.com/free-icon/mysql_318-890313.jpg?t=st=1690568973~exp=1690569573~hmac=065a6c55251f406c13dbc734c9fef1cb2eddc48697dd8ec8327b8586720b54e1" alt="" class="image-top">
+                    <div class="vertical-text">
+                        MySQL Devloper (2023-2024)
+                    </div>
+                    <div class="vertical-des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptates! Fugit quae modi labore perspiciatis ullam eveniet iusto, doloribus delectus, adipisci animi nihil.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-center">
+            Copyright &#169; www.UsashiSaha.com | All right reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Devloper', 'Graphic Designer', 'Web Designer', 'Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>
